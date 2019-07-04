@@ -1,0 +1,158 @@
+html,
+body,
+div,
+p,
+ul,
+li,
+span,
+a {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: calc(100vw / 7.5);
+  color: #fff;
+  /* border: 1px solid transparent; */
+}
+// 纯 CSS 滚动进度条效果
+// body {
+//   background-image: linear-gradient(to right top, #ffcc00 50%, #eee 50%);
+//   background-size: 100% calc(100% - 100vh + 0.05rem);
+//   background-repeat: no-repeat;
+// }
+
+// body::after {
+//   content: "";
+//   position: fixed;
+//   top: 0.05rem;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   background: #fff;
+//   z-index: -1;
+// }
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: none;
+  background-color: transparent;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  background-color: #00a160;
+  border-radius: 10px;
+}
+/* iconfont样式 */
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  margin-right: 0.1rem;
+  font-size: 0.4rem;
+  fill: currentColor;
+  overflow: hidden;
+}
+/* 公共样式结束 */
+.text-center {
+  text-align: center;
+}
+.colors {
+  color: #ff5722;
+  margin-right: 0.1rem;
+}
+.el-button {
+  border: none;
+  font-size: 0.26rem;
+  padding: 0.15rem;
+}
+// table
+.el-table {
+  th {
+    .cell {
+      text-align: center;
+    }
+  }
+}
+// 提示信息
+.el-message {
+  background-color: #00a160;
+  box-shadow: 0 0 #fff;
+  border: none;
+  .el-icon-info,
+  .el-message__content {
+    color: #fff;
+    font-size: 0.26rem;
+  }
+}
+// 提示框
+.el-tooltip__popper.is-dark {
+  background: #f36454;
+  color: #333;
+}
+// 加载提示
+.el-loading-spinner {
+  i,
+  .el-loading-text {
+    color: #ff5722;
+  }
+}
+// 全局动画
+.bounce-enter-active {
+  animation: bounce-in 0.5s;
+}
+.bounce-leave-active {
+  animation: bounce-in 0.5s linear alternate-reverse both;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  15% {
+    transform: scale(1.02);
+  }
+  25% {
+    transform: scale(1.03);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  75% {
+    transform: scale(1.03);
+  }
+  85% {
+    transform: scale(1.02);
+  }
+  95% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: calc(100vw / 14);
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 1200px) {
+  html {
+    font-size: calc(100vw / 12);
+  }
+}

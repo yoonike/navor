@@ -1,0 +1,32 @@
+{
+    "code":0,
+    "msg":"成功",
+    "total":0,
+    "totalpage":0,
+    "data":[
+        {
+            "cateName":"book",
+            "cateTitle":"电子书",
+            "href":"https://www.amazon.cn/free",
+            "name":"亚马逊 Kindle免费电子书",
+            "title":"亚马逊官方免费Kindle",
+            "des":"亚马逊提供上万本免费电子书，包括免费中文电子书和免费外文电子书"
+        },
+        {
+            "cateName":"book",
+            "cateTitle":"电子书",
+            "href":"http://haodoo.net/",
+            "name":"好讀",
+            "title":"好讀網站提供epub，mobi等格式電子書",
+            "des":"好讀網站是推廣中文電子書的公益網站"
+        },
+        {
+            "cateName":"book",
+            "cateTitle":"电子书",
+            "href":"http://haodoo.net/",
+            "name":"DigiLibraries",
+            "title":"免费电子书库，超过 20,000 本免费电子书，提供 MOBI、EPUB、PDF 等格式电子书。",
+            "des":" 免费电子书库，超过 20,000 本免费电子书，提供 MOBI、EPUB、PDF 等格式电子书。"
+        }
+    ]
+}
